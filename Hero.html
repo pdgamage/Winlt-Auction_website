@@ -10,23 +10,229 @@
 
 <body>
 
-    <div class="bg-[image:url('hero.jpg')] bg-cover bg-center bg-no-repeat h-screen">
-        <nav class="bg-[#F3F4F6] bg-opacity-50 font-sans p-4 m-1 rounded-[15px] fixed top-0 left-0 right-0 z-10">
-            <div class="flex justify-between items-center">
-                <div class="text-4xl text-black font-semibold">
-                    <a href="index.html">Winlt</a>
+    <!-- Hero Section -->
+    <div id="hero-section" class="h-screen flex items-center justify-center p-4 bg-[#FFFFFF]">
+        <!-- Combined Box -->
+        <div class="w-[100%] h-[600px] bg-[#F0FDF4] rounded-lg shadow-lg flex overflow-hidden mt-[15px]">
+            <!-- Left Text Box -->
+            <div class="w-1/2 p-8 flex flex-col justify-center">
+                <div class="flex-col items-center justify-center h-full">
+                    <h1 id="slide-text" class="text-4xl font-semibold text-gray-800 text-center mt-40">
+                        Discover the joy of bidding and winning! Experience seamless auctions and amazing opportunities with us.
+                    </h1>
+                    <button id="learn-more-btn"
+                        class="mt-6 mx-36 bg-[#16A34A] text-white w-[400px] px-4 py-2 rounded-md hover:bg-[#166534] hidden">
+                        Learn More
+                    </button>
                 </div>
-                <ul class="space-x-4 text-[18px] font-bold mr-10 flex">
-                    <li><a href="index.html" class="text-black">Home</a></li>
-                    <li><a href="about.html" class="text-black">About</a></li>
-                    <li><a href="contact.html" class="text-black">Contact</a></li>
-                    <li><button><a href="login.html" class="text-black">Login</a></button></li>
-                </ul>
             </div>
-        </nav>
-    </div>
-    
-</body>
 
+            <!-- Right Image -->
+            <div class="w-1/2">
+                <img id="slide-image" class="w-full h-full object-cover transition-all duration-1000 ease-in-out"
+                    src="slide1.png" alt="Slideshow Image" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Hot Auction Items Section -->
+    <div class="mt-20 p-4 ">
+        <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Hot Auction Items</h2>
+        <div class="relative">
+            <div class="overflow-hidden h-72 flex px-10 space-x-6" id="auction-items">
+                <!-- Auction Item 1 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item1.jpg" alt="Item 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 1 Title</h3>
+                        <p class="text-gray-600">Description of item 1.</p>
+                        <p class="font-bold text-gray-800 mt-2">$50.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 2 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item2.jpg" alt="Item 2" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 2 Title</h3>
+                        <p class="text-gray-600">Description of item 2.</p>
+                        <p class="font-bold text-gray-800 mt-2">$75.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 3 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item3.jpg" alt="Item 3" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 3 Title</h3>
+                        <p class="text-gray-600">Description of item 3.</p>
+                        <p class="font-bold text-gray-800 mt-2">$120.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 4 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item4.jpg" alt="Item 4" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 4 Title</h3>
+                        <p class="text-gray-600">Description of item 4.</p>
+                        <p class="font-bold text-gray-800 mt-2">$80.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 5 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item5.jpg" alt="Item 5" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 5 Title</h3>
+                        <p class="text-gray-600">Description of item 5.</p>
+                        <p class="font-bold text-gray-800 mt-2">$90.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 6 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item6.jpg" alt="Item 6" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 6 Title</h3>
+                        <p class="text-gray-600">Description of item 6.</p>
+                        <p class="font-bold text-gray-800 mt-2">$110.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item1.jpg" alt="Item 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 1 Title</h3>
+                        <p class="text-gray-600">Description of item 1.</p>
+                        <p class="font-bold text-gray-800 mt-2">$50.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 2 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item2.jpg" alt="Item 2" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 2 Title</h3>
+                        <p class="text-gray-600">Description of item 2.</p>
+                        <p class="font-bold text-gray-800 mt-2">$75.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 3 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item3.jpg" alt="Item 3" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 3 Title</h3>
+                        <p class="text-gray-600">Description of item 3.</p>
+                        <p class="font-bold text-gray-800 mt-2">$120.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 4 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item4.jpg" alt="Item 4" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 4 Title</h3>
+                        <p class="text-gray-600">Description of item 4.</p>
+                        <p class="font-bold text-gray-800 mt-2">$80.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 5 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item5.jpg" alt="Item 5" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 5 Title</h3>
+                        <p class="text-gray-600">Description of item 5.</p>
+                        <p class="font-bold text-gray-800 mt-2">$90.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 6 -->
+                <div class="flex-shrink-0 w-60 bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="item6.jpg" alt="Item 6" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg text-gray-800">Item 6 Title</h3>
+                        <p class="text-gray-600">Description of item 6.</p>
+                        <p class="font-bold text-gray-800 mt-2">$110.00</p>
+                        <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Bid Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and Right Arrow Buttons -->
+            <button id="prev-btn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2 rounded-full hover:bg-gray-600">
+                &#8592;
+            </button>
+            <button id="next-btn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2 rounded-full hover:bg-gray-600">
+                &#8594;
+            </button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-[#DCFCE7] bg-opacity-50 font-sans p-4 m-1 rounded-[15px] fixed top-0 left-0 right-0 z-10">
+        <div class="flex flex-wrap justify-between items-center">
+            <!-- Logo -->
+            <div class="text-4xl text-[#3F6212] font-semibold">
+                <a href="index.html">Winlt</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex space-x-24 text-[18px] font-semibold mr-10 items-center">
+                <li><a href="index.html" class="text-black hover:text-blue-500">Home</a></li>
+                <li><a href="about.html" class="text-black hover:text-blue-500">About</a></li>
+                <li><a href="contact.html" class="text-black hover:text-blue-500">Contact</a></li>
+                <li>
+                    <button class="bg-[#16A34A] text-white px-4 py-2 rounded-md hover:bg-[#166534]">
+                        Join Now
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        // Functionality for smooth scrolling of auction items
+        let currentIndex = 0;
+        const items = document.querySelectorAll("#auction-items > div");
+        const itemsContainer = document.getElementById("auction-items");
+        const prevBtn = document.getElementById("prev-btn");
+        const nextBtn = document.getElementById("next-btn");
+
+        prevBtn.addEventListener("click", () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                itemsContainer.scrollTo({
+                    left: items[currentIndex].offsetLeft,
+                    behavior: "smooth"
+                });
+            }
+        });
+
+        nextBtn.addEventListener("click", () => {
+            if (currentIndex < items.length - 1) {
+                currentIndex++;
+                itemsContainer.scrollTo({
+                    left: items[currentIndex].offsetLeft,
+                    behavior: "smooth"
+                });
+            }
+        });
+    </script>
+
+</body>
 
 </html>
