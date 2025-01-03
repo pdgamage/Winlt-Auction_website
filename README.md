@@ -1,2 +1,2 @@
-# Computer_parts-Auction_site
-Buy and sell computer parts with ease on our auction site. Find everything from processors to graphic cards at competitive prices. Bid, win, and upgrade your setup today!
+# Online Auction Website
+WinIt is an online auction platform designed to make buying and selling items easy and accessible. It allows users to create and browse listings, place bids in real-time, and complete transactions securely. With a user-friendly design and tools tailored for both bidders and sellers, WinIt simplifies the auction process while promoting fair and competitive bidding.
